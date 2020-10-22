@@ -27,7 +27,8 @@ from random import shuffle
 from config import *
 
 def normalize_fn(x):
-    return tf.nn.l2_normalize(x, dim=2)
+	# return tf.nn.l2_normalize(x, dim=2) # Old for tf 1.x.x
+	return tf.nn.l2_normalize(x, axis=2) # Update for tf 2.x.x
 
 
 def network_arch():

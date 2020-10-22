@@ -1,0 +1,12 @@
+
+
+## Ignore all weight file
+*.hdf5
+model/*.hdf5
+
+## Ignore all log file of tensorboard
+logs/
+
+## Ignore dataset
+
+dataset/
